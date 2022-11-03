@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/head"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.mentaldiary.ui.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_practiceFragment2"
+            app:destination="@id/practiceFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_diaryFragment2"
+            app:destination="@id/diaryFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_motivationFragment2"
+            app:destination="@id/motivationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/diaryFragment"
+        android:name="com.example.mentaldiary.ui.fragment.DiaryFragment"
+        android:label="fragment_diary_"
+        tools:layout="@layout/fragment_diary" />
+    <fragment
+        android:id="@+id/practiceFragment"
+        android:name="com.example.mentaldiary.ui.fragment.PracticeFragment"
+        android:label="fragment_practice"
+        tools:layout="@layout/fragment_practice" />
+    <fragment
+        android:id="@+id/motivationFragment"
+        android:name="com.example.mentaldiary.ui.fragment.MotivationFragment"
+        android:label="fragment_motivation"
+        tools:layout="@layout/fragment_motivation" />
+</navigation>
