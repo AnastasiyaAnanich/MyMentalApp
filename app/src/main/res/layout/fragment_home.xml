@@ -4,50 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragment.HomeFragment">
+    tools:context=".fragment.HomeFragment">
 
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/practice_button"
         android:layout_width="168dp"
         android:layout_height="165dp"
-        android:layout_marginStart="24dp"
-
+        android:layout_marginStart="36dp"
+        android:src="@color/light_yellow"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
-        app:layout_constraintVertical_bias="0.506" />
+        app:layout_constraintTop_toBottomOf="@+id/home_button" />
 
     <ImageButton
-        android:id="@+id/imageButton1"
+        android:id="@+id/diary_button"
         android:layout_width="168dp"
         android:layout_height="165dp"
         android:layout_marginBottom="36dp"
-        android:src="@drawable/med3"
+        android:src="@color/light_yellow"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.559"
-        app:layout_constraintStart_toEndOf="@+id/imageButton" />
+        app:layout_constraintHorizontal_bias="0.358"
+        app:layout_constraintStart_toEndOf="@+id/practice_button" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="168dp"
-        android:layout_height="165dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="328dp"
-        android:src="@drawable/home_practice"
+        android:id="@+id/home_button"
+        android:layout_width="173dp"
+        android:layout_height="162dp"
+        android:layout_marginTop="332dp"
+        android:src="@color/light_yellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/motivation_button"
         android:layout_width="168dp"
         android:layout_height="165dp"
-        android:layout_marginBottom="36dp"
-
-        app:layout_constraintBottom_toTopOf="@+id/imageButton1"
+        android:layout_marginTop="332dp"
+        android:src="@color/light_yellow"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.568"
-        app:layout_constraintStart_toEndOf="@+id/imageButton2" />
+        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintStart_toEndOf="@+id/home_button"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

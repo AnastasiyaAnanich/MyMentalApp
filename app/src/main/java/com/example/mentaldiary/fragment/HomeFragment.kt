@@ -1,9 +1,10 @@
-package com.example.mentaldiary.ui.fragment
+package com.example.mentaldiary.fragment
 
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import com.example.mentaldiary.fragment.base.BaseFragment
 import com.example.mentaldiary.databinding.FragmentHomeBinding
 
 class HomeFragment : BaseFragment<FragmentHomeBinding>() {
@@ -16,11 +17,15 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
 
 
     override fun FragmentHomeBinding.onBindView(saveInstanceState: Bundle?) {
-        imageButton.setOnClickListener {
+        practiceButton.setOnClickListener {
             navController.navigate(HomeFragmentDirections.actionHomeFragmentToPracticeFragment2())
+        }
+        diaryButton.setOnClickListener {
+            navController.navigate(HomeFragmentDirections.actionHomeFragmentToDiaryFragment2())
+        }
+        motivationButton.setOnClickListener {
+            navController.navigate(HomeFragmentDirections.actionHomeFragmentToMotivationFragment2())
 
         }
-
     }
-
 }

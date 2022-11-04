@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:text="Нажмите"
             android:textColor="@color/light_grey"
-            android:textSize="18sp"
+            android:textSize="10sp"
             android:textStyle="bold"
             app:flow_horizontalBias="0.5"
             app:layout_constraintBottom_toBottomOf="parent"

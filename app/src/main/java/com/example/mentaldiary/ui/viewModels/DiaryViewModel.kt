@@ -6,7 +6,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
 import com.example.mentaldiary.diary.Diary
 import com.example.mentaldiary.diary.DiaryDatabase
-import com.example.mentaldiary.repository.DiaryRepository
+import com.example.mentaldiary.diary.DiaryRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

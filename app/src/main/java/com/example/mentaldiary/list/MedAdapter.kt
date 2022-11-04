@@ -1,4 +1,4 @@
-package com.example.mentaldiary.ui.adapter
+package com.example.mentaldiary.list
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,7 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mentaldiary.R
-import com.example.mentaldiary.practice.Meditation
+import com.example.mentaldiary.fragment.practice.Meditation
 
 class MedAdapter(private val meditationList: ArrayList<Meditation>) :
     RecyclerView.Adapter<MedAdapter.MeditationVHolder>() {

@@ -1,4 +1,4 @@
-package com.example.mentaldiary.repository
+package com.example.mentaldiary.diary
 
 import androidx.lifecycle.LiveData
 import com.example.mentaldiary.diary.Diary

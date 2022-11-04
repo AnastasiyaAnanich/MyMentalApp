@@ -1,4 +1,4 @@
-package com.example.mentaldiary.ui.fragment
+package com.example.mentaldiary.fragment.base
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -60,4 +60,6 @@ abstract class BaseFragment<VIEW_BINDING : ViewBinding> : Fragment() {
 
         _navController = null
     }
+
+
 }

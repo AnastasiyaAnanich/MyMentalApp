@@ -5,7 +5,7 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity(tableName = "diaryTable")
-class Diary(
+data class Diary(
     @ColumnInfo(name = "tittle") val diaryTittle: String,
     @ColumnInfo(name = "description") val diaryDescription: String,
     @ColumnInfo(name = "timeStamp") val diaryTimeStamp: String

@@ -1,45 +1,41 @@
-package com.example.mentaldiary.ui.fragment
+package com.example.mentaldiary.fragment
 
 
 import android.os.Bundle
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
-import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.mentaldiary.list.MedAdapter
 import com.example.mentaldiary.R
-import com.example.mentaldiary.practice.Meditation
-import com.example.mentaldiary.ui.adapter.MedAdapter
+import com.example.mentaldiary.databinding.FragmentPracticeBinding
+import com.example.mentaldiary.fragment.base.BaseFragment
+import com.example.mentaldiary.fragment.practice.Meditation
 
 
-class PracticeFragment : Fragment() {
+class PracticeFragment : BaseFragment<FragmentPracticeBinding>() {
+
     private lateinit var recyclerView: RecyclerView
     private lateinit var meditationArrayList: ArrayList<Meditation>
     private lateinit var adapter: MedAdapter
 
     private lateinit var imageId: Array<Int>
     private lateinit var headingText: Array<String>
-    private lateinit var med: Array<String>
 
-    @Override
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_practice, container, false)
+    override fun createViewBinding(
+        inflater: LayoutInflater,
+        container: ViewGroup?
+    ): FragmentPracticeBinding = FragmentPracticeBinding.inflate(inflater, container, false)
 
-    }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        view.findViewById<TextView>(R.id.textView)
-
+    override fun FragmentPracticeBinding.onBindView(saveInstanceState: Bundle?) {
+        buttonHomePractice.setOnClickListener {
+            navController.navigate(PracticeFragmentDirections.actionPracticeFragmentToHomeFragment())
+        }
 
         initData()
         val layoutManager = LinearLayoutManager(context)
-        recyclerView = view.findViewById(R.id.recycler_View_Practice)
+        recyclerView = recyclerViewPractice
         recyclerView.layoutManager = layoutManager
         recyclerView.setHasFixedSize(true)
         adapter = MedAdapter(meditationArrayList)
@@ -59,15 +55,10 @@ class PracticeFragment : Fragment() {
         headingText = arrayOf(
             getString(R.string.head1),
             getString(R.string.head2),
-            getString(R.string.head1),
-            getString(R.string.head2)
+            getString(R.string.head3),
+            getString(R.string.head4)
         )
-        med = arrayOf(
-            getString(R.string.news1),
-            getString(R.string.news2),
-            getString(R.string.news1),
-            getString(R.string.news2)
-        )
+
         for (i in imageId.indices) {
             val med = Meditation(imageId[i], headingText[i])
             meditationArrayList.add(med)
