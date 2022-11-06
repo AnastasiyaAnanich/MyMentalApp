@@ -29,7 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Нажмите"
-            android:textColor="@color/light_grey"
+            android:textColor="@color/lavender"
             android:textSize="10sp"
             android:textStyle="bold"
             app:flow_horizontalBias="0.5"

@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.viewbinding.ViewBinding
 
 
@@ -60,6 +61,7 @@ abstract class BaseFragment<VIEW_BINDING : ViewBinding> : Fragment() {
 
         _navController = null
     }
+
 
 
 }

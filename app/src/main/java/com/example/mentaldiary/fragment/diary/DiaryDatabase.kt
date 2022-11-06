@@ -1,4 +1,4 @@
-package com.example.mentaldiary.diary
+package com.example.mentaldiary.fragment.diary
 
 import android.content.Context
 import androidx.room.Database

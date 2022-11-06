@@ -1,18 +1,15 @@
-package com.example.mentaldiary.ui.viewModels
+package com.example.mentaldiary.fragment.diary
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
-import com.example.mentaldiary.diary.Diary
-import com.example.mentaldiary.diary.DiaryDatabase
-import com.example.mentaldiary.diary.DiaryRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class DiaryViewModel(application: Application) : AndroidViewModel(application) {
-    private val allDiary: LiveData<List<Diary>>
-    private val repository: DiaryRepository
+    val allDiary: LiveData<List<Diary>>
+    val repository: DiaryRepository
 
     init {
         val dao = DiaryDatabase.getDatabase(application).getDiaryDao()

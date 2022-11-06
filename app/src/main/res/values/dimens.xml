@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="matchConstraint">0dp</dimen>
+    <dimen name="margin8dp">8dp</dimen>
+    <dimen name="margin16dp">16dp</dimen>
+    <dimen name="margin32dp">32dp</dimen>
+
+    <dimen name="textSize14sp">14sp</dimen>
+    <dimen name="textSize20sp">20sp</dimen>
+
+    <dimen name="imageSize100dp">100dp</dimen>
+    <dimen name="lineWidth3dp">3dp</dimen>
+
+</resources>

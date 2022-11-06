@@ -7,10 +7,14 @@ import android.view.ViewGroup
 import com.example.mentaldiary.databinding.FragmentMotivationBinding
 import com.example.mentaldiary.fragment.base.BaseFragment
 import com.example.mentaldiary.fragment.motivation.MotivationViewModel
+import com.example.mentaldiary.list.BookAdapter
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 
 class MotivationFragment : BaseFragment<FragmentMotivationBinding>() {
-    lateinit var viewModel: MotivationViewModel
+    private val viewModel by viewModel<MotivationViewModel>()
+
+    private val bookAdapter = BookAdapter()
 
     override fun createViewBinding(
         inflater: LayoutInflater,
@@ -19,11 +23,11 @@ class MotivationFragment : BaseFragment<FragmentMotivationBinding>() {
 
 
     override fun FragmentMotivationBinding.onBindView(saveInstanceState: Bundle?) {
-        motivationBookButton.setOnClickListener {
-            viewModel.getBook(4)
-        }
+        viewModel.getBook(4)
+        recyclerViewMotivation.adapter = bookAdapter
+
         viewModel.bookLiveData.observe(viewLifecycleOwner) { book ->
-            println(book.toString())
+            bookAdapter.submitList(book)
         }
     }
 }

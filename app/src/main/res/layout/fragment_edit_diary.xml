@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color"
+    tools:context=".fragment.diary.EditDiaryFragment">
+
+    <EditText
+        android:id="@+id/diary_editTittle"
+        android:layout_width="403dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#83D0C3F7"
+        android:hint="Какой сегодня день?"
+        android:minHeight="48dp"
+        android:textColor="@color/sky"
+        android:textColorHint="#848888"
+        android:autofillHints="Choose" />
+
+    <EditText
+        android:id="@+id/diary_editDescription"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/diary_buttonAddUpdate"
+        android:layout_below="@id/diary_editTittle"
+        android:layout_marginStart="@dimen/margin8dp"
+        android:layout_marginTop="@dimen/margin8dp"
+        android:layout_marginEnd="@dimen/margin8dp"
+        android:layout_marginBottom="@dimen/margin8dp"
+        android:background="#83D0C3F7"
+        android:gravity="start|top"
+        android:hint="Расскажите как прошёл ваш день?"
+        android:singleLine="false"
+        android:textColor="@color/white"
+        android:textColorHint="#848888" />
+
+    <Button
+        android:id="@+id/diary_buttonAddUpdate"
+        android:layout_width="393dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/custom_button_back"
+        android:text="button"
+        android:textAllCaps="false"
+        app:iconTint="@color/lavender"
+        app:rippleColor="@color/lavender" />
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

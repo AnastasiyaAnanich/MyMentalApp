@@ -1,6 +1,7 @@
 package com.example.mentaldiary.di
 
 import com.example.data.RetrofitCreator
+import com.example.data.converters.BookToBookDtoConverter
 import com.example.data.repository.NetworkRepositoryImpl
 import com.example.data.storage.network.NetworkService
 import com.example.data.storage.network.NetworkStorage
@@ -19,6 +20,8 @@ val dataModule = module {
         NetworkStorageImpl(get())
     }
     single<NetworkRepository> {
-        NetworkRepositoryImpl(get())
+        NetworkRepositoryImpl(get(),get())
     }
+
+    factory { BookToBookDtoConverter() }
 }

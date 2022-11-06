@@ -1,8 +1,8 @@
-package com.example.mentaldiary.diary
+package com.example.mentaldiary.fragment.diary
 
 import androidx.lifecycle.LiveData
-import com.example.mentaldiary.diary.Diary
-import com.example.mentaldiary.diary.DiaryDao
+import com.example.mentaldiary.fragment.diary.Diary
+import com.example.mentaldiary.fragment.diary.DiaryDao
 
 class DiaryRepository(private val diaryDao: DiaryDao) {
     val allDiary: LiveData<List<Diary>> = diaryDao.getAllDiary()

@@ -1,7 +1,8 @@
-package com.example.mentaldiary.diary
+package com.example.mentaldiary.fragment.diary
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
+import com.example.mentaldiary.fragment.diary.Diary
 
 @Dao
 interface DiaryDao {

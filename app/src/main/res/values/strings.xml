@@ -11,4 +11,12 @@
     <string name="head3">Для чего читать книги о саморазвитии?</string>
     <string name="head4">Есть ли способы борьбы со стрессовым перееданием?</string>
     <string name="motivation_bookButton">Получить книгу</string>
+    <string name="diary_button">Дневник</string>
+    <string name="motivation_button">Мотивация</string>
+    <string name="practice_button">Практика</string>
+    <string name="practice_text">Как перестать обращать внимание на чужое мнение, какие гормоны отвечают за хорошее настроение, какая привычка способна воплотить мечты в реальность.</string>
+    <string name="diary_text">Психологическая польза от ведения дневника — не единственный позитивный эффект. Такая практика помогает лучше формулировать чувства,разбираться в собственных эмоциях,развивает творческий потенциал.</string>
+    <string name="motivation_text">Наша лень, наши привычки и стереотипы день ото дня превращаются в непредсказуемый мир неудачников. Какой вариант предпочтительнее – подвергаться периодической унизительной «прополке», или «гореть звездой»?</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

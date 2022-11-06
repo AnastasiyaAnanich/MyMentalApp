@@ -1,4 +1,4 @@
-package com.example.mentaldiary.ui.viewModels
+package com.example.mentaldiary.fragment.home
 
 import androidx.lifecycle.ViewModel
 

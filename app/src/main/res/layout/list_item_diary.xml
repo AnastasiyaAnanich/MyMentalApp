@@ -47,17 +47,17 @@
 
         <ImageView
             android:id="@+id/diary_Delete_remote"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="34dp"
+            android:layout_height="33dp"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:layout_marginStart="3dp"
             android:layout_marginTop="3dp"
-            android:layout_marginEnd="3dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginBottom="3dp"
             android:padding="3dp"
-            android:src="?attr/actionModeCutDrawable"
-            app:tint="@color/light_grey" />
+            android:src="@drawable/ic_delete"
+            app:tint="@color/white" />
 
     </RelativeLayout>
 
