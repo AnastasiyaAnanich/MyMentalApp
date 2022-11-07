@@ -20,9 +20,10 @@
             android:id="@+id/action_homeFragment_to_motivationFragment2"
             app:destination="@id/motivationFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/diaryFragment"
-        android:name="com.example.mentaldiary.fragment.diary.DiaryFragment"
+        android:name="com.example.mentaldiary.fragment.DiaryFragment"
         android:label="fragment_diary_"
         tools:layout="@layout/fragment_diary" >
         <action
@@ -32,6 +33,7 @@
             android:id="@+id/action_diaryFragment_to_editDiaryFragment"
             app:destination="@id/editDiaryFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/practiceFragment"
         android:name="com.example.mentaldiary.fragment.PracticeFragment"
@@ -41,6 +43,7 @@
             android:id="@+id/action_practiceFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/motivationFragment"
         android:name="com.example.mentaldiary.fragment.MotivationFragment"
@@ -50,6 +53,7 @@
             android:id="@+id/action_motivationFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/editDiaryFragment"
         android:name="com.example.mentaldiary.fragment.diary.EditDiaryFragment"

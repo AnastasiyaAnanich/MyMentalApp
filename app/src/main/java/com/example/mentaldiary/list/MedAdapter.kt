@@ -13,8 +13,8 @@ class MedAdapter(private val meditationList: ArrayList<Meditation>) :
     RecyclerView.Adapter<MedAdapter.MeditationVHolder>() {
 
     class MeditationVHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val image: ImageView = itemView.findViewById(R.id.imageView)
-        val text: TextView = itemView.findViewById(R.id.textView)
+        val image: ImageView = itemView.findViewById(R.id.list_PracticeImage)
+        val text: TextView = itemView.findViewById(R.id.list_PracticeText)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MeditationVHolder {

@@ -1,4 +1,4 @@
-package com.example.mentaldiary.fragment.diary
+package com.example.mentaldiary.fragment
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,6 +9,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mentaldiary.databinding.FragmentDiaryBinding
 import com.example.mentaldiary.fragment.base.BaseFragment
+import com.example.mentaldiary.fragment.diary.Diary
+import com.example.mentaldiary.fragment.diary.DiaryViewModel
+import com.example.mentaldiary.fragment.diary.EditDiaryFragment
 import com.example.mentaldiary.list.DiaryRecyclerAdapter
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import org.koin.androidx.viewmodel.ext.android.viewModel
@@ -28,6 +31,9 @@ class DiaryFragment : BaseFragment<FragmentDiaryBinding>(), DiaryRecyclerAdapter
 
 
     override fun FragmentDiaryBinding.onBindView(saveInstanceState: Bundle?) {
+        diaryButtonHomeDiary.setOnClickListener {
+            navController.navigate(DiaryFragmentDirections.actionDiaryFragmentToHomeFragment())
+        }
         diaryRecycler = diaryRecyclerView
         addDiary = buttonAddDiary
         diaryRecycler.layoutManager = LinearLayoutManager(requireContext())

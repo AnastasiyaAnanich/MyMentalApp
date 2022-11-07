@@ -9,7 +9,7 @@ import kotlinx.coroutines.launch
 
 class DiaryViewModel(application: Application) : AndroidViewModel(application) {
     val allDiary: LiveData<List<Diary>>
-    val repository: DiaryRepository
+    private val repository: DiaryRepository
 
     init {
         val dao = DiaryDatabase.getDatabase(application).getDiaryDao()

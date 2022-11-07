@@ -23,6 +23,10 @@ class MotivationFragment : BaseFragment<FragmentMotivationBinding>() {
 
 
     override fun FragmentMotivationBinding.onBindView(saveInstanceState: Bundle?) {
+        diaryButtonHomeMotivation.setOnClickListener {
+            navController.navigate(MotivationFragmentDirections.actionMotivationFragmentToHomeFragment())
+        }
+
         viewModel.getBook(4)
         recyclerViewMotivation.adapter = bookAdapter
 

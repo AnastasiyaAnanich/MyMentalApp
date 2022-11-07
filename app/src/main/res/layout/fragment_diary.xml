@@ -4,34 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.diary.DiaryFragment">
+    android:background="@drawable/background_color"
+    tools:context=".fragment.DiaryFragment">
 
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/diary_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         android:layout_marginTop="5dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/list_item_diary" />
-
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/button_add_diary"
-        android:layout_width="wrap_content"
+        android:layout_width="77dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="31dp"
-        android:layout_marginRight="31dp"
-        android:layout_marginBottom="41dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="69dp"
         android:src="?attr/actionModeCopyDrawable"
         app:backgroundTint="@color/sky"
         app:tint="@color/white" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/diary_button_home_diary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/custom_button_back"
+        android:gravity="center"
+        android:insetRight="2dp"
+        android:text="home"
+        android:textAllCaps="false"
+        app:iconTint="@color/lavender"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="@color/lavender" />
 
 
 </RelativeLayout>

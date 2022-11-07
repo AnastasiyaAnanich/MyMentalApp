@@ -29,7 +29,7 @@ class PracticeFragment : BaseFragment<FragmentPracticeBinding>() {
 
 
     override fun FragmentPracticeBinding.onBindView(saveInstanceState: Bundle?) {
-        buttonHomePractice.setOnClickListener {
+        diaryButtonHomePractice.setOnClickListener {
             navController.navigate(PracticeFragmentDirections.actionPracticeFragmentToHomeFragment())
         }
 

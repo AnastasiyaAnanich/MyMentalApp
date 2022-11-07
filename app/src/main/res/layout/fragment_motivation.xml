@@ -4,33 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_color"
     tools:context=".fragment.MotivationFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_View_Motivation"
         android:layout_width="@dimen/matchConstraint"
-        android:textColor="@color/light_grey"
         android:layout_height="@dimen/matchConstraint"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         android:orientation="vertical"
+        android:textColor="@color/light_grey"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/button_home_practice"
-        android:layout_width="140dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="132dp"
+        android:id="@+id/diary_button_home_motivation"
+        android:layout_width="393dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_marginBottom="16dp"
-        android:text="на главную"
-        android:textColor="@color/white"
-        android:textSize="15sp"
-        app:backgroundTint="@color/sky"
-        app:iconTint="@color/white"
+        android:background="@drawable/custom_button_back"
+        android:text="home"
+        android:textAllCaps="false"
+        app:iconTint="@color/lavender"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="@color/lavender" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

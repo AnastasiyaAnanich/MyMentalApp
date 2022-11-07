@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import com.example.mentaldiary.databinding.FragmentEditDiaryBinding
+import com.example.mentaldiary.fragment.DiaryFragment
 import com.example.mentaldiary.fragment.base.BaseFragment
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import java.text.SimpleDateFormat

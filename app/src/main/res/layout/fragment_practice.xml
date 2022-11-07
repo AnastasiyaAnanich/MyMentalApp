@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_color"
     tools:context=".fragment.PracticeFragment">
 
     <androidx.recyclerview.widget.RecyclerView
@@ -16,18 +17,22 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/button_home_practice"
-            android:layout_width="wrap_content"
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/diary_button_home_practice"
+            android:layout_width="393dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="32dp"
-            android:text="на главную"
-            android:textColor="@color/white"
-            app:backgroundTint="@color/sky"
-            app:iconTint="@color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/custom_button_back"
+            android:text="home"
+            android:textAllCaps="false"
+            app:iconTint="@color/lavender"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:rippleColor="@color/lavender" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
