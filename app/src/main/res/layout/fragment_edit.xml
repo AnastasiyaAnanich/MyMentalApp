@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_color"
-    tools:context=".fragment.NotesFragment">
+    tools:context=".fragment.EditFragment">
 
 
     <EditText
@@ -40,7 +40,7 @@
         android:textColorHint="#848888" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/diary_button_home_diary"
+        android:id="@+id/notes_button_home"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

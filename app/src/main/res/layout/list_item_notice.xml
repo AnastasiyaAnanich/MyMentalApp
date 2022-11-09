@@ -16,10 +16,10 @@
 
         <ImageView
             android:id="@+id/list_noticeImage"
-            android:layout_width="120dp"
-            android:layout_height="100dp"
+            android:layout_width="46dp"
+            android:layout_height="99dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/med3"
+            android:src="@color/lavender"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -28,15 +28,17 @@
             android:id="@+id/list_noteTitleOne"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Нажмите"
+            android:text="Заметка"
             android:textColor="@color/light_grey"
             android:textSize="10sp"
             android:textStyle="bold"
             app:flow_horizontalBias="0.5"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.517"
             app:layout_constraintStart_toEndOf="@id/list_noticeImage"
             app:layout_constraintTop_toTopOf="parent" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

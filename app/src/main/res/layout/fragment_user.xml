@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_color"
-    tools:context=".fragment.UserFragment">
+    tools:context=".fragment.ImagesFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_View_User"
+        android:id="@+id/recycler_view_images"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:orientation="vertical"

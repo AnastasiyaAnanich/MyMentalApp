@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.NoteFragment"
+    android:background="@drawable/background_color">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_View_Practice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/list_item_notice"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/notes_button_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/custom_button_back"
+        android:gravity="center"
+        android:insetRight="2dp"
+        android:text="на главный экран"
+        android:textAllCaps="false"
+        app:iconTint="@color/lavender"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="@color/lavender" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/notes_button_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="72dp"
+        android:background="@drawable/custom_button_back"
+        android:gravity="center"
+        android:insetRight="2dp"
+        android:text="Добавить заметку"
+        android:textAllCaps="false"
+        app:iconTint="@color/lavender"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="@color/lavender" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

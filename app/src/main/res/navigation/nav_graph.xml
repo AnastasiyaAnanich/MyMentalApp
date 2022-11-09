@@ -23,9 +23,9 @@
 
     <fragment
         android:id="@+id/diaryFragment"
-        android:name="com.example.mentaldiary.fragment.NotesFragment"
+        android:name="com.example.mentaldiary.fragment.EditFragment"
         android:label="fragment_diary_"
-        tools:layout="@layout/fragment_notes" >
+        tools:layout="@layout/fragment_note" >
         <action
             android:id="@+id/action_diaryFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
@@ -46,7 +46,7 @@
 
     <fragment
         android:id="@+id/motivationFragment"
-        android:name="com.example.mentaldiary.fragment.UserFragment"
+        android:name="com.example.mentaldiary.fragment.ImagesFragment"
         android:label="fragment_motivation"
         tools:layout="@layout/fragment_user" >
         <action

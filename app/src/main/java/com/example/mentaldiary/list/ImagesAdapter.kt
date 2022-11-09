@@ -8,29 +8,29 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.viewbinding.ViewBinding
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
-import com.example.domain.models.UserDto
+import com.example.domain.models.ImagesDto
 import com.example.mentaldiary.base.BaseViewHolder
 import com.example.mentaldiary.databinding.ListItemUserBinding
 
 
-class UserAdapter :
+class ImagesAdapter :
     ListAdapter<Any, BaseViewHolder<ViewBinding, Any>>(object : DiffUtil.ItemCallback<Any>() {
         override fun areItemsTheSame(oldItem: Any, newItem: Any): Boolean = when {
-            oldItem is UserDto && newItem is UserDto -> oldItem.id == newItem.id
+            oldItem is ImagesDto && newItem is ImagesDto -> oldItem.title == newItem.title
             else -> false
         }
 
         @SuppressLint("DiffUtilEquals")
         override fun areContentsTheSame(oldItem: Any, newItem: Any): Boolean = when {
-            oldItem is UserDto && newItem is UserDto -> oldItem == newItem
+            oldItem is ImagesDto && newItem is ImagesDto -> oldItem == newItem
             else -> false
         }
     }) {
 
     override fun getItemViewType(position: Int): Int = when (getItem(position)) {
-        is UserDto -> LIST_ITEM_MOTIVATION
+        is ImagesDto -> LIST_ITEM_IMAGES
         else -> throw java.lang.IllegalArgumentException(
-            "UserAdapter can't handle item" + getItem(
+            "ImagesAdapter can't handle item" + getItem(
                 position
             )
         )
@@ -39,29 +39,29 @@ class UserAdapter :
     override fun onCreateViewHolder(
         parent: ViewGroup, viewType: Int
     ): BaseViewHolder<ViewBinding, Any> = when (viewType) {
-        LIST_ITEM_MOTIVATION -> UserViewHolder(parent) as BaseViewHolder<ViewBinding, Any>
-        else -> throw java.lang.IllegalArgumentException("UserAdapter can't handle the $viewType type")
+        LIST_ITEM_IMAGES -> ImagesViewHolder(parent) as BaseViewHolder<ViewBinding, Any>
+        else -> throw java.lang.IllegalArgumentException("ImagesAdapter can't handle the $viewType type")
     }
 
     override fun onBindViewHolder(holder: BaseViewHolder<ViewBinding, Any>, position: Int) =
         holder.handleItem(getItem(position))
 
     companion object {
-        private const val LIST_ITEM_MOTIVATION = 997
+        private const val LIST_ITEM_IMAGES = 997
     }
 }
 
-private class UserViewHolder(private val parent: ViewGroup) :
-    BaseViewHolder<ListItemUserBinding, UserDto>(
+private class ImagesViewHolder(private val parent: ViewGroup) :
+    BaseViewHolder<ListItemUserBinding, ImagesDto>(
         ListItemUserBinding.inflate(LayoutInflater.from(parent.context), parent, false)
     ) {
     @SuppressLint("SetTextI18n")
-    override fun ListItemUserBinding.bind(value: UserDto) {
-        titleFirstName.text = "Имя: " + value.firstname
-        titleLastName.text = "Фамилия: " + value.lastname
+    override fun ListItemUserBinding.bind(value: ImagesDto) {
+        tittle.text = "Tittle: " + value.title
+        description.text = "Description: " + value.description
 
         Glide.with(parent.context)
-            .load(value.image)
+            .load(value.url)
             .diskCacheStrategy(DiskCacheStrategy.ALL)
             .centerCrop().into(imageImage)
     }

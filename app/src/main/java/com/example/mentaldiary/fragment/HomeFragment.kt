@@ -15,7 +15,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
 
 
     override fun FragmentHomeBinding.onBindView(saveInstanceState: Bundle?) {
-    userImage.setOnClickListener {
+    imageImage.setOnClickListener {
             navController.navigate(HomeFragmentDirections.actionHomeFragmentToMotivationFragment2())
         }
         noticeImage.setOnClickListener {

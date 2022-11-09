@@ -2,16 +2,16 @@ package com.example.mentaldiary.di
 
 import androidx.room.Room
 import com.example.data.RetrofitCreator
-import com.example.data.converters.UserEntityToUserDtoConverter
-import com.example.data.converters.UserToUserDtoConverter
-import com.example.data.converters.UserToUserEntityConvertor
+import com.example.data.converters.ImagesEntityToImagesDtoConverter
+import com.example.data.converters.ImagesToImagesDtoConverter
+import com.example.data.converters.ImagesToImagesEntityConvertor
 import com.example.data.repository.NetworkRepositoryImpl
 import com.example.data.storage.network.NetworkService
 import com.example.data.storage.network.NetworkStorage
 import com.example.data.storage.network.NetworkStorageImpl
-import com.example.data.storage.network.database.DataBaseUserStorage
-import com.example.data.storage.network.database.DataBaseUserStorageImpl
-import com.example.data.storage.network.database.UserDataBase
+import com.example.data.storage.network.database.DataBaseImagesStorage
+import com.example.data.storage.network.database.DataBaseImagesStorageImpl
+import com.example.data.storage.network.database.ImagesDataBase
 import com.example.domain.repository.NetworkRepository
 import com.google.gson.GsonBuilder
 import org.koin.android.ext.koin.androidApplication
@@ -26,28 +26,28 @@ val dataModule = module {
     single { creator.createService(get(), NetworkService::class.java) as NetworkService }
 
     single {
-        Room.databaseBuilder(androidApplication(), UserDataBase::class.java, "user_data_base")
+        Room.databaseBuilder(androidApplication(), ImagesDataBase::class.java, "images_data_base")
             .fallbackToDestructiveMigration()
             .build()
     }
 
-    single { get<UserDataBase>().userDao() }
+    single { get<ImagesDataBase>().imagesDao() }
 
 
     single<NetworkStorage> {
         NetworkStorageImpl(get())
     }
 
-    single<DataBaseUserStorage> { DataBaseUserStorageImpl(get()) }
+    single<DataBaseImagesStorage> { DataBaseImagesStorageImpl(get()) }
 
 
     single<NetworkRepository> {
         NetworkRepositoryImpl(get(), get(), get(), get(), get())
     }
 
-    factory { UserToUserDtoConverter() }
+    factory { ImagesToImagesDtoConverter() }
 
-    factory { UserEntityToUserDtoConverter() }
+    factory { ImagesEntityToImagesDtoConverter() }
 
-    factory { UserToUserEntityConvertor() }
+    factory { ImagesToImagesEntityConvertor() }
 }

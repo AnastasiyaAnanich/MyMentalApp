@@ -6,14 +6,14 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.example.mentaldiary.databinding.FragmentUserBinding
 import com.example.mentaldiary.base.BaseFragment
-import com.example.mentaldiary.fragment.user.UserViewModel
-import com.example.mentaldiary.list.UserAdapter
+import com.example.mentaldiary.fragment.user.ImagesViewModel
+import com.example.mentaldiary.list.ImagesAdapter
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 
-class UserFragment : BaseFragment<FragmentUserBinding>() {
-    private val viewModel by viewModel<UserViewModel>()
-    private val userAdapter = UserAdapter()
+class ImagesFragment : BaseFragment<FragmentUserBinding>() {
+    private val viewModel by viewModel<ImagesViewModel>()
+    private val imagesAdapter = ImagesAdapter()
 
 
     override fun createViewBinding(
@@ -24,13 +24,13 @@ class UserFragment : BaseFragment<FragmentUserBinding>() {
 
     override fun FragmentUserBinding.onBindView(saveInstanceState: Bundle?) {
         diaryButtonHomeMotivation.setOnClickListener {
-            navController.navigate(UserFragmentDirections.actionMotivationFragmentToHomeFragment())
+            navController.navigate(ImagesFragmentDirections.actionMotivationFragmentToHomeFragment())
         }
 
-        viewModel.getUsers(5)
-        recyclerViewUser.adapter = userAdapter
-        viewModel.userLiveData.observe(viewLifecycleOwner) { users ->
-            userAdapter.submitList(users)
+        viewModel.getImages(5)
+        recyclerViewImages.adapter = imagesAdapter
+        viewModel.userLiveData.observe(viewLifecycleOwner) { images ->
+            imagesAdapter.submitList(images)
 
         }
     }
