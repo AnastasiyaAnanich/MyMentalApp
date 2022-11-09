@@ -32,9 +32,9 @@
 
     <ImageView
         android:id="@+id/notice_image"
-        android:layout_width="160dp"
-        android:layout_height="226dp"
-        android:layout_marginBottom="196dp"
+        android:layout_width="168dp"
+        android:layout_height="231dp"
+        android:layout_marginBottom="200dp"
         android:src="@color/lavender"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/text_notes"
@@ -89,9 +89,9 @@
 
     <TextView
         android:id="@+id/text_practice"
-        android:layout_width="167dp"
-        android:layout_height="207dp"
-        android:layout_marginTop="120dp"
+        android:layout_width="157dp"
+        android:layout_height="173dp"
+        android:layout_marginTop="116dp"
         android:text="@string/practice_text"
         android:textColor="@color/light_grey"
         android:textSize="12sp"
@@ -99,12 +99,13 @@
         app:drawableTint="@color/sky"
         app:fontFamily="sans-serif-light"
         app:layout_constraintEnd_toStartOf="@+id/practice_image"
+        app:layout_constraintHorizontal_bias="0.421"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/text_user"
-        android:layout_width="165dp"
+        android:layout_width="166dp"
         android:layout_height="168dp"
         android:text="@string/user_text"
         android:textColor="@color/light_grey"

@@ -15,10 +15,10 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
 
 
     override fun FragmentHomeBinding.onBindView(saveInstanceState: Bundle?) {
-        motivationImage.setOnClickListener {
+    userImage.setOnClickListener {
             navController.navigate(HomeFragmentDirections.actionHomeFragmentToMotivationFragment2())
         }
-        diaryImage.setOnClickListener {
+        noticeImage.setOnClickListener {
             navController.navigate(HomeFragmentDirections.actionHomeFragmentToDiaryFragment2())
         }
         practiceImage.setOnClickListener {
