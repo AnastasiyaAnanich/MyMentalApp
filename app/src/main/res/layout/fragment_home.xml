@@ -14,31 +14,31 @@
         android:layout_height="201dp"
         android:layout_marginTop="108dp"
         android:layout_marginEnd="24dp"
-        android:src="@color/lavender"
+        android:src="@drawable/ic_notes"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/image_image"
-        android:layout_width="167dp"
-        android:layout_height="201dp"
+        android:layout_width="197dp"
+        android:layout_height="211dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="32dp"
-        android:src="@color/lavender"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/med5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.766"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/text_user" />
 
     <ImageView
         android:id="@+id/notice_image"
-        android:layout_width="168dp"
-        android:layout_height="231dp"
+        android:layout_width="184dp"
+        android:layout_height="233dp"
         android:layout_marginBottom="200dp"
-        android:src="@color/lavender"
+        android:src="@drawable/ic_add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/text_notes"
-        app:layout_constraintHorizontal_bias="0.391"
+        app:layout_constraintHorizontal_bias="0.245"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
@@ -73,9 +73,9 @@
 
     <TextView
         android:id="@+id/text_notes"
-        android:layout_width="159dp"
-        android:layout_height="164dp"
-        android:layout_marginBottom="12dp"
+        android:layout_width="170dp"
+        android:layout_height="163dp"
+        android:layout_marginBottom="4dp"
         android:text="@string/notes_text"
         android:textColor="@color/light_grey"
         android:textSize="12sp"
@@ -84,13 +84,13 @@
         app:fontFamily="sans-serif-light"
         app:layout_constraintBottom_toTopOf="@+id/image_image"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.908"
+        app:layout_constraintHorizontal_bias="0.979"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/text_practice"
-        android:layout_width="157dp"
-        android:layout_height="173dp"
+        android:layout_width="168dp"
+        android:layout_height="174dp"
         android:layout_marginTop="116dp"
         android:text="@string/practice_text"
         android:textColor="@color/light_grey"

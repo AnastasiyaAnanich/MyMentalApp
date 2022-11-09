@@ -13,7 +13,7 @@ import org.mockito.kotlin.mock
 class GetImagesUseCaseTest {
 
     private companion object {
-        const val TITLE_TEST = 1
+        const val TITLE_TEST = "title"
         const val DESCRIPTION_TEST = "uuid"
         const val URL_TEST = "firstname"
 

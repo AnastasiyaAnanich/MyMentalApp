@@ -1,4 +1,4 @@
-package com.example.mentaldiary.fragment.user
+package com.example.mentaldiary.fragment.images
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

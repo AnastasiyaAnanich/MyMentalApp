@@ -4,8 +4,9 @@ package com.example.mentaldiary.fragment
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import com.example.mentaldiary.databinding.FragmentHomeBinding
+import android.widget.Toast
 import com.example.mentaldiary.base.BaseFragment
+import com.example.mentaldiary.databinding.FragmentHomeBinding
 
 class HomeFragment : BaseFragment<FragmentHomeBinding>() {
     override fun createViewBinding(
@@ -15,7 +16,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
 
 
     override fun FragmentHomeBinding.onBindView(saveInstanceState: Bundle?) {
-    imageImage.setOnClickListener {
+        imageImage.setOnClickListener {
             navController.navigate(HomeFragmentDirections.actionHomeFragmentToMotivationFragment2())
         }
         noticeImage.setOnClickListener {
@@ -24,5 +25,25 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
         practiceImage.setOnClickListener {
             navController.navigate(HomeFragmentDirections.actionHomeFragmentToPracticeFragment2())
         }
+        emotionOne.setOnClickListener {
+            Toast.makeText(
+                requireContext(),
+                "что,бы поднять себе настроение можно заняться спортом",
+                Toast.LENGTH_SHORT
+            ).show()
+        }
+        emotionTwo.setOnClickListener {
+            Toast.makeText(requireContext(), "мы рады , что у вас всё хорошо", Toast.LENGTH_SHORT)
+                .show()
+        }
+        emotionThree.setOnClickListener {
+            Toast.makeText(
+                requireContext(),
+                "Отлично!Продолжайте в том же духе",
+                Toast.LENGTH_SHORT
+            ).show()
+        }
     }
 }
+
+

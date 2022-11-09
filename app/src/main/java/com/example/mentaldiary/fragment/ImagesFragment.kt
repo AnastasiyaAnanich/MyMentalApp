@@ -4,14 +4,14 @@ package com.example.mentaldiary.fragment
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import com.example.mentaldiary.databinding.FragmentUserBinding
 import com.example.mentaldiary.base.BaseFragment
-import com.example.mentaldiary.fragment.user.ImagesViewModel
+import com.example.mentaldiary.databinding.FragmentImagesBinding
+import com.example.mentaldiary.fragment.images.ImagesViewModel
 import com.example.mentaldiary.list.ImagesAdapter
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 
-class ImagesFragment : BaseFragment<FragmentUserBinding>() {
+class ImagesFragment : BaseFragment<FragmentImagesBinding>() {
     private val viewModel by viewModel<ImagesViewModel>()
     private val imagesAdapter = ImagesAdapter()
 
@@ -19,10 +19,10 @@ class ImagesFragment : BaseFragment<FragmentUserBinding>() {
     override fun createViewBinding(
         inflater: LayoutInflater,
         container: ViewGroup?
-    ): FragmentUserBinding = FragmentUserBinding.inflate(inflater, container, false)
+    ): FragmentImagesBinding = FragmentImagesBinding.inflate(inflater, container, false)
 
 
-    override fun FragmentUserBinding.onBindView(saveInstanceState: Bundle?) {
+    override fun FragmentImagesBinding.onBindView(saveInstanceState: Bundle?) {
         diaryButtonHomeMotivation.setOnClickListener {
             navController.navigate(ImagesFragmentDirections.actionMotivationFragmentToHomeFragment())
         }

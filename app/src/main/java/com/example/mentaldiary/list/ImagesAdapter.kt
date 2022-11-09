@@ -10,7 +10,7 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.example.domain.models.ImagesDto
 import com.example.mentaldiary.base.BaseViewHolder
-import com.example.mentaldiary.databinding.ListItemUserBinding
+import com.example.mentaldiary.databinding.ListItemImagesBinding
 
 
 class ImagesAdapter :
@@ -52,11 +52,11 @@ class ImagesAdapter :
 }
 
 private class ImagesViewHolder(private val parent: ViewGroup) :
-    BaseViewHolder<ListItemUserBinding, ImagesDto>(
-        ListItemUserBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+    BaseViewHolder<ListItemImagesBinding, ImagesDto>(
+        ListItemImagesBinding.inflate(LayoutInflater.from(parent.context), parent, false)
     ) {
     @SuppressLint("SetTextI18n")
-    override fun ListItemUserBinding.bind(value: ImagesDto) {
+    override fun ListItemImagesBinding.bind(value: ImagesDto) {
         tittle.text = "Tittle: " + value.title
         description.text = "Description: " + value.description
 

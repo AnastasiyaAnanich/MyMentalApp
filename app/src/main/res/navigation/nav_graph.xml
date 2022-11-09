@@ -25,7 +25,7 @@
         android:id="@+id/diaryFragment"
         android:name="com.example.mentaldiary.fragment.EditFragment"
         android:label="fragment_diary_"
-        tools:layout="@layout/fragment_note" >
+        tools:layout="@layout/fragment_person" >
         <action
             android:id="@+id/action_diaryFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
@@ -48,7 +48,7 @@
         android:id="@+id/motivationFragment"
         android:name="com.example.mentaldiary.fragment.ImagesFragment"
         android:label="fragment_motivation"
-        tools:layout="@layout/fragment_user" >
+        tools:layout="@layout/fragment_images" >
         <action
             android:id="@+id/action_motivationFragment_to_homeFragment"
             app:destination="@id/homeFragment" />

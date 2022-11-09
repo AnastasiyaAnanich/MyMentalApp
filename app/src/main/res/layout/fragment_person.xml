@@ -4,14 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".fragment.NoteFragment"
+    tools:context=".fragment.PersonFragment"
     android:background="@drawable/background_color">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_View_Practice"
+        android:id="@+id/recycler_View_Person"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/list_item_notice"/>
+        tools:listitem="@layout/list_item_person"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/notes_button_home"
@@ -31,22 +31,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:rippleColor="@color/lavender" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/notes_button_add"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="72dp"
-        android:background="@drawable/custom_button_back"
-        android:gravity="center"
-        android:insetRight="2dp"
-        android:text="Добавить заметку"
-        android:textAllCaps="false"
-        app:iconTint="@color/lavender"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:rippleColor="@color/lavender" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
