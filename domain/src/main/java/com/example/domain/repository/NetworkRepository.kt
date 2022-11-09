@@ -1,7 +1,8 @@
 package com.example.domain.repository
 
-import com.example.domain.models.BookDto
+import com.example.domain.models.UserDto
 
 interface NetworkRepository {
-    suspend fun getBooks(count: Int): List<BookDto>
+
+    suspend fun getUsers(count: Int): List<UserDto>
 }

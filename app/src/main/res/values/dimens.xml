@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="matchConstraint">0dp</dimen>
     <dimen name="margin8dp">8dp</dimen>
     <dimen name="margin16dp">16dp</dimen>
     <dimen name="margin32dp">32dp</dimen>

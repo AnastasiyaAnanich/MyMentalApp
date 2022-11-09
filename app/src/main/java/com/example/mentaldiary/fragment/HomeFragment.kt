@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.example.mentaldiary.databinding.FragmentHomeBinding
-import com.example.mentaldiary.fragment.base.BaseFragment
+import com.example.mentaldiary.base.BaseFragment
 
 class HomeFragment : BaseFragment<FragmentHomeBinding>() {
     override fun createViewBinding(
@@ -25,4 +25,4 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
             navController.navigate(HomeFragmentDirections.actionHomeFragmentToPracticeFragment2())
         }
     }
-    }
+}

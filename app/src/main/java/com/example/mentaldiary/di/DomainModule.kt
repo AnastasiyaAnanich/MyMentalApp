@@ -1,8 +1,9 @@
 package com.example.mentaldiary.di
 
-import com.example.domain.usecase.GetBookUseCase
+
+import com.example.domain.usecase.GetUsersUseCase
 import org.koin.dsl.module
 
 val domainModule = module {
-    factory<GetBookUseCase> { GetBookUseCase(get()) }
+    factory<GetUsersUseCase> { GetUsersUseCase(get()) }
 }

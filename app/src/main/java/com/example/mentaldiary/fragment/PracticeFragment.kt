@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.mentaldiary.list.MedAdapter
 import com.example.mentaldiary.R
 import com.example.mentaldiary.databinding.FragmentPracticeBinding
-import com.example.mentaldiary.fragment.base.BaseFragment
+import com.example.mentaldiary.base.BaseFragment
 import com.example.mentaldiary.fragment.practice.Meditation
 
 
@@ -18,7 +18,6 @@ class PracticeFragment : BaseFragment<FragmentPracticeBinding>() {
     private lateinit var recyclerView: RecyclerView
     private lateinit var meditationArrayList: ArrayList<Meditation>
     private lateinit var adapter: MedAdapter
-
     private lateinit var imageId: Array<Int>
     private lateinit var headingText: Array<String>
 

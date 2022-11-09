@@ -7,6 +7,7 @@
         <entry key="..\:/Users/Asus/MyMentalApp/app/src/main/res/drawable/background_splashscreen.xml" value="0.1" />
         <entry key="..\:/Users/Asus/MyMentalApp/app/src/main/res/drawable/custom_button_back.xml" value="0.1905" />
         <entry key="..\:/Users/Asus/MyMentalApp/app/src/main/res/drawable/ic_add.xml" value="0.2145" />
+        <entry key="..\:/Users/Asus/MyMentalApp/app/src/main/res/drawable/ic_delete.xml" value="0.1" />
         <entry key="..\:/Users/Asus/MyMentalApp/app/src/main/res/drawable/ic_diary_icon.xml" value="0.218" />
         <entry key="..\:/Users/Asus/MyMentalApp/app/src/main/res/drawable/ic_home_icon.xml" value="0.218" />
         <entry key="..\:/Users/Asus/MyMentalApp/app/src/main/res/drawable/ic_iconmental.xml" value="0.218" />
@@ -33,14 +34,17 @@
         <entry key="..\:/Users/Asus/MyMentalApp/app/src/main/res/layout/fragment_edit_diary.xml" value="0.3509963768115942" />
         <entry key="..\:/Users/Asus/MyMentalApp/app/src/main/res/layout/fragment_home.xml" value="0.33" />
         <entry key="..\:/Users/Asus/MyMentalApp/app/src/main/res/layout/fragment_main.xml" value="0.358695652173913" />
-        <entry key="..\:/Users/Asus/MyMentalApp/app/src/main/res/layout/fragment_motivation.xml" value="0.33" />
-        <entry key="..\:/Users/Asus/MyMentalApp/app/src/main/res/layout/fragment_practice.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/Asus/MyMentalApp/app/src/main/res/layout/fragment_motivation.xml" value="0.25" />
+        <entry key="..\:/Users/Asus/MyMentalApp/app/src/main/res/layout/fragment_practice.xml" value="0.15762273901808785" />
+        <entry key="..\:/Users/Asus/MyMentalApp/app/src/main/res/layout/fragment_profile.xml" value="0.33" />
+        <entry key="..\:/Users/Asus/MyMentalApp/app/src/main/res/layout/fragment_user.xml" value="0.33" />
         <entry key="..\:/Users/Asus/MyMentalApp/app/src/main/res/layout/list_card.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Asus/MyMentalApp/app/src/main/res/layout/list_diary.xml" value="0.3509963768115942" />
         <entry key="..\:/Users/Asus/MyMentalApp/app/src/main/res/layout/list_item.xml" value="0.358695652173913" />
         <entry key="..\:/Users/Asus/MyMentalApp/app/src/main/res/layout/list_item_diary.xml" value="0.3509963768115942" />
-        <entry key="..\:/Users/Asus/MyMentalApp/app/src/main/res/layout/list_item_motivation.xml" value="0.33" />
+        <entry key="..\:/Users/Asus/MyMentalApp/app/src/main/res/layout/list_item_motivation.xml" value="0.25" />
         <entry key="..\:/Users/Asus/MyMentalApp/app/src/main/res/layout/list_item_practice.xml" value="0.3509963768115942" />
+        <entry key="..\:/Users/Asus/MyMentalApp/app/src/main/res/layout/list_item_user.xml" value="0.3625" />
         <entry key="..\:/Users/Asus/MyMentalApp/app/src/main/res/layout/list_motivation.xml" value="0.18697916666666667" />
         <entry key="..\:/Users/Asus/MyMentalApp/app/src/main/res/layout/list_practice.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Asus/MyMentalApp/app/src/main/res/layout/list_view.xml" value="0.25" />
@@ -48,7 +52,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

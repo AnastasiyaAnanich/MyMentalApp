@@ -10,36 +10,35 @@
 
     <ImageView
         android:id="@+id/practice_image"
-        android:layout_width="189dp"
-        android:layout_height="193dp"
-        android:layout_marginTop="120dp"
-        android:layout_marginEnd="20dp"
+        android:layout_width="167dp"
+        android:layout_height="201dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="24dp"
         android:src="@color/lavender"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <ImageView
-        android:id="@+id/diary_image"
-        android:layout_width="188dp"
-        android:layout_height="210dp"
+        android:id="@+id/user_image"
+        android:layout_width="167dp"
+        android:layout_height="201dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginBottom="32dp"
         android:src="@color/lavender"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.791"
-        app:layout_constraintStart_toEndOf="@+id/textDiary" />
+        app:layout_constraintHorizontal_bias="0.766"
+        app:layout_constraintStart_toEndOf="@+id/text_user" />
 
     <ImageView
-        android:id="@+id/motivation_image"
-        android:layout_width="167dp"
-        android:layout_height="201dp"
-        android:layout_marginBottom="228dp"
+        android:id="@+id/notice_image"
+        android:layout_width="160dp"
+        android:layout_height="226dp"
+        android:layout_marginBottom="196dp"
         android:src="@color/lavender"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/text_motivation"
-        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintEnd_toStartOf="@+id/text_notes"
+        app:layout_constraintHorizontal_bias="0.391"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
@@ -48,7 +47,7 @@
         android:layout_height="51dp"
         android:layout_marginStart="104dp"
         android:layout_marginTop="48dp"
-        android:src="@color/lavender"
+        android:src="@drawable/ic_sad"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -58,7 +57,7 @@
         android:layout_height="51dp"
         android:layout_marginTop="48dp"
         android:layout_marginEnd="12dp"
-        android:src="@color/lavender"
+        android:src="@drawable/ic_happy"
         app:layout_constraintEnd_toStartOf="@+id/emotion_three"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -68,31 +67,31 @@
         android:layout_height="51dp"
         android:layout_marginTop="48dp"
         android:layout_marginEnd="104dp"
-        android:src="@color/lavender"
+        android:src="@drawable/ic_veryhappy"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/text_motivation"
-        android:layout_width="188dp"
-        android:layout_height="153dp"
-        android:layout_marginBottom="16dp"
-        android:text="@string/motivation_text"
+        android:id="@+id/text_notes"
+        android:layout_width="159dp"
+        android:layout_height="164dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/notes_text"
         android:textColor="@color/light_grey"
         android:textSize="12sp"
         android:textStyle="bold"
         app:drawableTint="@color/sky"
         app:fontFamily="sans-serif-light"
-        app:layout_constraintBottom_toTopOf="@+id/diary_image"
+        app:layout_constraintBottom_toTopOf="@+id/user_image"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintHorizontal_bias="0.908"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/text_practice"
-        android:layout_width="173dp"
-        android:layout_height="126dp"
-        android:layout_marginTop="144dp"
+        android:layout_width="167dp"
+        android:layout_height="207dp"
+        android:layout_marginTop="120dp"
         android:text="@string/practice_text"
         android:textColor="@color/light_grey"
         android:textSize="12sp"
@@ -100,15 +99,14 @@
         app:drawableTint="@color/sky"
         app:fontFamily="sans-serif-light"
         app:layout_constraintEnd_toStartOf="@+id/practice_image"
-        app:layout_constraintHorizontal_bias="0.648"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textDiary"
-        android:layout_width="159dp"
-        android:layout_height="178dp"
-        android:text="@string/diary_text"
+        android:id="@+id/text_user"
+        android:layout_width="165dp"
+        android:layout_height="168dp"
+        android:text="@string/user_text"
         android:textColor="@color/light_grey"
         android:textSize="12sp"
         android:textStyle="bold"
@@ -116,10 +114,9 @@
         app:fontFamily="sans-serif-light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintHorizontal_bias="0.109"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/motivation_image"
-        app:layout_constraintVertical_bias="0.523" />
+        app:layout_constraintTop_toBottomOf="@+id/notice_image" />
 
     <TextView
         android:id="@+id/emotion_text"

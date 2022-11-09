@@ -5,19 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_color"
-    tools:context=".fragment.MotivationFragment">
+    tools:context=".fragment.UserFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_View_Motivation"
-        android:layout_width="@dimen/matchConstraint"
-        android:layout_height="@dimen/matchConstraint"
+        android:id="@+id/recycler_View_User"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:orientation="vertical"
-        android:textColor="@color/light_grey"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:itemCount="5"
+        tools:listitem="@layout/list_item_user" />
 
 
     <com.google.android.material.button.MaterialButton
@@ -34,6 +35,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:rippleColor="@color/lavender" />
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+

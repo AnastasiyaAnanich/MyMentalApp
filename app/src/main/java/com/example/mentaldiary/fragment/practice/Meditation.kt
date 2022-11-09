@@ -1,4 +1,5 @@
 package com.example.mentaldiary.fragment.practice
 
 
-data class Meditation(var tittleImage: Int, var headingText: String)
+data class Meditation(
+    val tittleImage: Int, val headingText: String)

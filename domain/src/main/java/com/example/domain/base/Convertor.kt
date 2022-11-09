@@ -1,5 +1,6 @@
 package com.example.domain.base
 
-interface Converter<INPUT, OUTPUT> {
+interface Convertor<INPUT, OUTPUT> {
+
     fun invoke(params: INPUT): OUTPUT
 }
